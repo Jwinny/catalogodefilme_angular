@@ -1,0 +1,29 @@
+<h1>Cadastrar Filme</h1>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <label> Nome do filme: </label>
+  <br />
+  <input type="text" name="nome" ngModel>
+  <br />
+
+  <label> Gênero: </label>
+  <br />
+  <input type="text" name="genero" ngModel>
+  <br />
+
+  <label> Ano publicação: </label>
+  <br />
+  <input type="text" name="ano" ngModel>
+  <br />
+
+  <label> Autor: </label>
+  <br />
+  <input type="text" name="nomeAutor" ngModel>
+  <br />
+
+  <label> Data de Nascimento: </label>
+  <br />
+  <input type="text" name="dataNascimento" ngModel>
+  <br />
+
+  <button type="submit">Salvar</button>
+</form>
