@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component(
   {
@@ -12,11 +12,12 @@ import { Component } from "@angular/core";
   }
 )
 export class FilmeComponent {
-  nomeFilme: String;
-  anoPublicacao: number;
+  @Input() nomeFilme: String;
+  @Input() anoPublicacao: number;
 
   constructor(){
     this.nomeFilme = "Matrix";
     this.anoPublicacao = 1999;
   }
+
 }

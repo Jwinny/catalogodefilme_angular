@@ -20,4 +20,8 @@ export class FilmeService {
     ('http://localhost:8080/CatalogoDeFilmes/consultar-filme?id=' + filme.id);
   }
 
+  consultarFilmesPorId(id: number) {
+    return this.httpClient.get<Filme>
+    ('http://localhost:8080/CatalogoDeFilmes/consultar-filme?id=' + id);
+  }
 }

@@ -1,0 +1,14 @@
+<h1>Consultar Filme</h1>
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+  <label>Id do Filme:</label>
+  <br />
+  <input type="text" name="id" ngModel>
+  <br />
+  <button type="submit">Pesquisar</button>
+</form>
+
+<ng-container *ngIf="filme.id!=0">
+  <filme [nomeFilme]=filme.nome [anoPublicacao]=filme.ano></filme>
+  <autor [idAutor]=filme.autor.id [nomeDoAutor]=filme.autor.nomeAutor
+  [dataDeNascimento]=filme.autor.dataDeNascimento></autor>
+</ng-container>

@@ -9,6 +9,7 @@ import { FilmeComponent } from './filmes/filme.components';
 import { CadastrarFilmeComponent } from './cadastrar-filme/cadastrar-filme.component';
 import { FilmeService } from './cadastrar-filme/filme.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ConsultarFilmeComponent } from './consultar-filme/consultar-filme.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     FilmeComponent,
     AutorComponent,
     CadastrarFilmeComponent,
+    ConsultarFilmeComponent,
 
   ],
   imports: [

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'catalogodefilme_angular';
+  // template:number;
+  // // constructor(){
+  // //   this.template=0;
+  // // }
 }
